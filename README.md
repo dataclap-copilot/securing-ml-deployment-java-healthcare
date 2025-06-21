@@ -42,7 +42,10 @@ securing-ml-deployment-java-healthcare/
 ├── logging/                                     # Audit logger configs
 ├── tests/                                       # Unit and integration test placeholders
 └── security/                                    # Auth and TLS folders (placeholder)
+
+```
 ---
+
 ## 🚀 How to Run
 🔧 Prerequisites:
 Java 17+
