@@ -43,10 +43,8 @@ securing-ml-deployment-java-healthcare/
 ├── tests/                                       # Unit and integration test placeholders
 └── security/                                    # Auth and TLS folders (placeholder)
 
-
-
 🚀 How to Run
-🔧 Prerequisites
+🔧 Prerequisites:
 Java 17+
 
 Maven or Gradle
@@ -55,18 +53,18 @@ Docker
 
 (Optional) Kubernetes + Helm
 
-🧪 Local Development
+🧪 Local Development:
 
 ./gradlew bootRun
 # or if using Maven:
 mvn spring-boot:run
 
-🐳 Run with Docker
+🐳 Run with Docker:
 
 docker build -t mlsecure:latest .
 docker run -p 8443:8443 mlsecure:latest
 
-☸️ Deploy to Kubernetes
+☸️ Deploy to Kubernetes:
 
 kubectl apply -f deployment/kubernetes.yaml
 
