@@ -59,7 +59,7 @@ Docker
 ## 🧪 Local Development:
 
 ./gradlew bootRun
-# or if using Maven:
+ or if using Maven:
 mvn spring-boot:run
 ---
 ## 🐳 Run with Docker:
