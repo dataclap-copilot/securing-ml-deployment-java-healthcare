@@ -27,48 +27,61 @@ Healthcare data demands the highest level of privacy and integrity. This system 
 
 ## 📁 Project Structure
 
-```bash
+```
 securing-ml-deployment-java-healthcare/
 ├── src/
 │   └── main/
 │       ├── java/com/healthcare/mlsecure/       # Application code
 │       │   └── controller/                      # REST controller for predictions
-│       └── resources/                           # Spring Boot configuration (YAML, TLS)
+│       └── resources/                           # Spring Boot config (YAML, TLS)
 ├── docs/                                        # Architecture, compliance, audit strategy
 ├── deployment/                                  # Docker & Kubernetes setup
 │   ├── Dockerfile
 │   ├── kubernetes.yaml
 │   └── terraform/
 ├── logging/                                     # Audit logger configs
-├── tests/                                       # Unit and integration test placeholders
-└── security/                                    # Auth and TLS folders (placeholder)
-
+├── tests/                                       # Unit and integration tests
+└── security/                                    # Auth and TLS folders
 ```
+
 ---
 
 ## 🚀 How to Run
-🔧 Prerequisites:
-Java 17+
 
-Maven or Gradle
+### 🔧 Prerequisites
 
-Docker
+- Java 17+
+- Maven or Gradle
+- Docker
+- (Optional) Kubernetes + Helm
 
-(Optional) Kubernetes + Helm
 ---
-## 🧪 Local Development:
 
+### 🧪 Local Development
+
+```bash
 ./gradlew bootRun
- or if using Maven:
-mvn spring-boot:run
----
-## 🐳 Run with Docker:
+```
 
+Or if using Maven:
+
+```bash
+mvn spring-boot:run
+```
+
+---
+
+### 🐳 Run with Docker
+
+```bash
 docker build -t mlsecure:latest .
 docker run -p 8443:8443 mlsecure:latest
----
-## ☸️ Deploy to Kubernetes:
+```
 
+---
+
+### ☸️ Deploy to Kubernetes
+
+```bash
 kubectl apply -f deployment/kubernetes.yaml
-
----
+```
